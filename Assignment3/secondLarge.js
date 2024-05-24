@@ -1,6 +1,6 @@
 function findSecondLargest(arr) {
     if (arr.length < 2) {
-      return null; // If there are fewer than 2 elements, there is no second largest element.
+      return null;
     }
   
     let first = -Infinity;
@@ -15,11 +15,11 @@ function findSecondLargest(arr) {
       }
     }
   
-    return second === -Infinity ? null : second; // Handle the case where there is no second distinct largest element.
+    return second === -Infinity ? null : second;
   }
   
-  // Example usage:
+  // Ex.
   const arr = [12, 35, 1, 10, 34, 1];
   const secondLargest = findSecondLargest(arr);
-  console.log(`The second largest element is ${secondLargest}`); // Output: The second largest element is 34
+  console.log(`The second largest element is ${secondLargest}`); 
   
