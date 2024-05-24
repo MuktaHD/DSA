@@ -12,8 +12,9 @@ function countFrequency(arr) {
     return frequency;
   }
   
-  // Example usage:
+  // Ex.
   const arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
   const frequencyCounts = countFrequency(arr);
-  console.log(frequencyCounts); // Output: {1: 1, 2: 2, 3: 3, 4: 4}
+  console.log(frequencyCounts); 
+}
   
