@@ -1,10 +1,10 @@
 const transposeMatrix = (matrix) => {
     const rows = matrix.length;
     const cols = matrix[0].length;
-    // Create a new matrix to store the transpose
+    
     let transposedMatrix = Array.from({ length: cols }, () => Array(rows).fill(0));
 
-    // Transpose the matrix
+    
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             transposedMatrix[j][i] = matrix[i][j];
