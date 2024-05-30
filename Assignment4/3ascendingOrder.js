@@ -1,6 +1,6 @@
 const searchInSortedMatrix = (matrix, target) => {
     if (!matrix || matrix.length === 0) {
-        return false; // Empty matrix or no rows
+        return false; 
     }
 
     const rows = matrix.length;
