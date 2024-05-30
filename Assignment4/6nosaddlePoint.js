@@ -2,12 +2,9 @@ function findSaddlePoint(matrix) {
     const numRows = matrix.length;
     const numCols = matrix[0].length;
 
-    // Iterate through each row
     for (let i = 0; i < numRows; i++) {
         let minInRow = matrix[i][0];
         let colIndex = 0;
-
-        // Find minimum in row
         for (let j = 1; j < numCols; j++) {
             if (matrix[i][j] < minInRow) {
                 minInRow = matrix[i][j];
@@ -15,7 +12,7 @@ function findSaddlePoint(matrix) {
             }
         }
 
-        // Check if minimum in row is maximum in column
+ 
         let isSaddlePoint = true;
         for (let k = 0; k < numRows; k++) {
             if (matrix[k][colIndex] > minInRow) {
