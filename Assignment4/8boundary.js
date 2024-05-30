@@ -7,10 +7,10 @@ function printBoundaryElements(matrix) {
             if (i === 0 || i === numRows - 1 || j === 0 || j === numCols - 1) {
                 process.stdout.write(matrix[i][j] + " ");
             } else {
-                process.stdout.write("  "); // Print spaces for non-boundary elements
+                process.stdout.write("  ");  
             }
         }
-        console.log(); // Move to the next line after each row
+        console.log(); 
     }
 }
 
