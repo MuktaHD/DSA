@@ -6,7 +6,6 @@ const searchInSortedMatrix = (matrix, target) => {
     const rows = matrix.length;
     const cols = matrix[0].length;
 
-    // Start from the top right corner
     let row = 0;
     let col = cols - 1;
 
@@ -20,7 +19,7 @@ const searchInSortedMatrix = (matrix, target) => {
         }
     }
 
-    return false; // Target not found
+    return false; 
 };
 
 const matrix = [
@@ -31,4 +30,4 @@ const matrix = [
 ];
 const target = 29;
 
-console.log(searchInSortedMatrix(matrix, target)); // Output: true
+console.log(searchInSortedMatrix(matrix, target)); 
