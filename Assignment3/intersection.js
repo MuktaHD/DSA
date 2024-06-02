@@ -8,7 +8,7 @@ function intersection(arr1, arr2) {
     return Array.from(intersectionSet);
   }
   
-  // Ex.
+  // Example 
   const arr1 = [1, 2, 2, 1];
   const arr2 = [2, 2];
   const result = intersection(arr1, arr2);
