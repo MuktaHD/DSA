@@ -20,22 +20,19 @@ class Stack {
         }
         return this.items[this.items.length - 1];
     }
-
-    // isEmpty operation
     isEmpty() {
         return this.items.length === 0;
     }
 }
 
-// Example usage:
 let stack = new Stack();
 stack.push(10);
 stack.push(20);
 stack.push(30);
-console.log(stack.peek());    // Output: 30
-console.log(stack.pop());     // Output: 30
-console.log(stack.peek());    // Output: 20
-console.log(stack.isEmpty()); // Output: false
+console.log(stack.peek());    
+console.log(stack.pop());     
+console.log(stack.peek());    
+console.log(stack.isEmpty()); 
 stack.pop();
 stack.pop();
-console.log(stack.isEmpty()); // Output: true
+console.log(stack.isEmpty()); 
