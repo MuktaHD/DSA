@@ -53,22 +53,17 @@ function infixToPrefix(infix) {
         return str.split('').reverse().join('');
     }
 
-    // Step 1: Reverse the infix expression
     let reversedInfix = reverseString(infix);
-
-    // Step 2: Replace '(' with ')' and vice versa
     reversedInfix = reversedInfix.replace(/\(/g, 'temp');
     reversedInfix = reversedInfix.replace(/\)/g, '(');
     reversedInfix = reversedInfix.replace(/temp/g, ')');
 
-    // Step 3: Get postfix expression of modified expression
     let postfix = infixToPostfix(reversedInfix);
 
-    // Step 4: Reverse the postfix expression to get prefix expression
     let prefix = reverseString(postfix);
 
     return prefix;
 }
 
 const infix = "a+b*(c^d-e)^(f+g*h)-i";
-console.log(infixToPrefix(infix));  // Output: -+a*b^-^cde+f*ghi
+console.log(infixToPrefix(infix)); 
