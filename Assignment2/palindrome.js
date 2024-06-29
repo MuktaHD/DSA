@@ -10,5 +10,6 @@ function isPalindrome(str){
         return false;
     }
 }
+
 console.log(isPalindrome("mukta"));
 console.log(isPalindrome("madam"));
