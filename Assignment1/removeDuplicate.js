@@ -1,3 +1,4 @@
+
 var removeDuplicates = function(nums) {
     let k = 1;
     for (let i = 0; i < nums.length - 1; i++) {
