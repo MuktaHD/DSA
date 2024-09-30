@@ -35,4 +35,4 @@ console.log(stack.peek());
 console.log(stack.isEmpty()); 
 stack.pop();
 stack.pop();
-console.log(stack.isEmpty()); 
+console.log(stack.isEmpty());
